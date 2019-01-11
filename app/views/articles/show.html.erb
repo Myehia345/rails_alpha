@@ -1,11 +1,14 @@
 <html>
- <h1>Showing selected article</h1>
+    <h1>Showing selected article</h1>
+    
+    <p>
+        Title: <%= @article.title %>
+    </p>
 
-<p>
-    Title: <%= @article.title %>
-</p>
-
-<p>
-    Description: <%= @article.descripton %>
-</p>
+    <p>
+        Description: <%= @article.descripton %>
+    </p>
+    
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+    <%= link_to 'Back to articles', articles_path %>
 </html>
