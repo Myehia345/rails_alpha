@@ -1,7 +1,7 @@
 <% flash.each do |name ,msg|%>
-<script>
-function myFunction() {
-  alert(<%= msg %>);
-}
-</script>
+<ul>
+
+<li><%= msg %></li>
+
+</ul>
 <% end %>
