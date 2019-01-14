@@ -10,8 +10,49 @@ $navbar-default-bg: black;
     letter-spacing: -1px;
     font-weight: bold;
 }
+#logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
 .center{
     text-align: center;
-    
+}
+
+.jumbotron{
+    background-image: asset-url('quix.jpg');
+    background-size: cover;
+    height: 550px;
+}
+.jumbotron h1{
+    color: black;
+    text-align: top;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.btn-xlg{
+    font-size: 1.7em;
+    background-color: black;
+}
+.footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+}
+footer a:hover {
+    color: #222;
+}
+footer small {
+    float: left;
+}
+footer ul {
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 15px;
 }
