@@ -13,7 +13,8 @@
                     <%= link_to art.title, article_path(art) %>
                 </div>
                 <div class="art-body">
-                    <%= truncate(art.descripton, length: 100) %>
+                    <%= truncate(art.descripton, length: 100) %> <!--truncate used to collabse the text area to certain length-->
+                    
                 </div>
                 <div class="article-actions">
                     <%= link_to "Edit",edit_article_path(art), class: "btn btn-xs btn-primary" %>
