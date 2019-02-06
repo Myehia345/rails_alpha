@@ -12,5 +12,5 @@ class User < ActiveRecord::Base
     uniqueness: { case_sensetive: false },
     format: {with: Valid_Email_Regex }
               
-    
+    has_secure_password
 end
