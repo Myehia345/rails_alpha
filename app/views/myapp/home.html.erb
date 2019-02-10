@@ -3,6 +3,8 @@
     <div class = " center jumbotron">
         <head><title>Home</title></head>
         <h1>ALPHA BLOG</h1>
-        <%= link_to "Sign up", signup_path ,class: "btn btn-danger btn-xlg"  %>
+        <% if !loggedin? %>
+            <%= link_to "Sign up", signup_path ,class: "btn btn-danger btn-xlg"  %>
+        <% end %>
     </div>
 </html>

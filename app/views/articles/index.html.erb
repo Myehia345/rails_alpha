@@ -3,6 +3,15 @@
         <%= link_to "Create New Article" ,new_article_path , class: "btn btn-primary btn-lg" %>
     </div>
 </div>
+
 <h1 align="center" ><br>Listing all articles</h1>
 
+<div align = "center">
+    <%= will_paginate %>
+</div>
+
 <%= render 'articles' ,obj: @articles %>
+
+<div align = "center">
+    <%= will_paginate %>
+</div>
