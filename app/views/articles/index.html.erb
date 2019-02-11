@@ -1,6 +1,11 @@
+
 <div align="center" class="form-group">    
     <div class ="col-sm-12">
-        <%= link_to "Create New Article" ,new_article_path , class: "btn btn-primary btn-lg" %>
+        <% if loggedin? %>
+            <%= link_to "Create New Article" ,new_article_path , class: "btn btn-primary btn-lg" %>
+        <% else %>
+            <%= link_to "Create New Article" ,login_path , class: "btn btn-primary btn-lg" %>
+        <% end %>    
     </div>
 </div>
 
