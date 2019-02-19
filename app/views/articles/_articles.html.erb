@@ -15,6 +15,9 @@
                         </small>
                     </div>
                 </div>
+                <% if art.categories.any? %>
+                   <p>Categories: <%= render art.categories %></p>
+                <% end %>
                 <% if loggedin? && (current_user == art.user || current_user.admin?) %>
                     <div class="article-actions">
                         <%= link_to "Edit",edit_article_path(art), class: "btn btn-xs btn-primary" %>

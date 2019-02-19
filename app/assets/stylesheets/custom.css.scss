@@ -61,12 +61,23 @@ $navbar-default-bg: black;
     padding-bottom: 15px;
 }
 .listing {
-    padding-top: 15px;
+    padding-top: 8px;
     list-style: none;
     padding-left: 0;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
+    font-size: 1.5em;
 }
 
+.badge{
+    background-color: #CEF6F5;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.input_checkbox input {
+    width: auto !important;
+}
 footer {
     margin-top: 45px;
     padding-top: 5px;
